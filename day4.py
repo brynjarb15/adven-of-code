@@ -1,6 +1,10 @@
 import pprint
 pp = pprint.PrettyPrinter(indent=4)
 
+# Read the input
+f = open("input4.txt", "r")
+lines = f.read().splitlines()
+
 
 # read the lines and create a bingo array
 def readAndCreateBingoBoard(lines):
@@ -57,9 +61,7 @@ class BingoBoard:
         return sum
         
     
-# Read the input
-f = open("input4.txt", "r")
-lines = f.read().splitlines()
+
 
 # Get the numbers that will be drawn in the bingo
 drawNumbers = lines[0].split(',')
